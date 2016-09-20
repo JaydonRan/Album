@@ -1,0 +1,173 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <LINK rel="Bookmark" href="/favicon.ico">
+    <LINK rel="Shortcut Icon" href="/favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <script type="text/javascript" src="lib/PIE_IE678.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="static/h-ui/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="icheck/icheck.css"/>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <!--/meta 作为公共模版分离出去-->
+
+    <title>相册</title>
+    <style>
+       /* 相册头*/
+
+       /*相册导航*/
+       /*相册操作*/
+       .al-caozuo{
+           background-color: #f2f6ff;
+       }
+       /*相册主体*/
+        .al-imge{
+            width: 240px;
+            height: 200px;
+        }
+       .al-imge:hover{
+           cursor: pointer;
+       }
+
+    </style>
+</head>
+<body>
+<article class="page-container">
+    <div class="panel panel-default ">
+        <div class="panel-header">
+            <div class="row cl">
+                <div class="formControls col-xs-6 col-sm-6">
+                    <input class="btn btn-block size-L radius upImge" type="button" value="上传图片">
+                </div>
+                <div class="formControls col-xs-6 col-sm-6">
+                    <input class="btn btn-block size-L radius createFolder" type="button" value="创建文件夹">
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row cl">
+                <div class="formControls col-xs-12 col-sm-12">
+                    <nav class="Hui-breadcrumb">
+                        <a class="maincolor" href="/">首页</a>
+                        <span class="c-666 en">&gt;</span>组件<span class="c-666 en">&gt;</span><span
+                            class="c-666">菜单</span>
+                    </nav>
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="formControls col-xs-12 col-sm-12 mt-10 pd-10 al-caozuo">
+                    <input class="" type="checkbox" id="checkbox-all" value="">
+                    <label for="checkbox-all">全选</label>
+                    <input class="btn   radius" type="button" value="删除">
+                    <input class="btn   radius" type="button" value="复制">
+                    <input class="btn   radius" type="button" value="移动">
+                </div>
+            </div>
+            <div class="row cl ">
+                <div class="f-l mt-20 ml-20 ">
+                    <img src="./imge/6.png" alt="..." class="al-imge">
+                    <ul class="row cl mt-5 ml-5" style="width: 200px;">
+                        <li class="f-l">
+                            <input class="" type="checkbox" value="">
+                        </li>
+                        <li class="f-l">
+                            <p class="text-overflow" style="width: 185px">&nbsp&nbsp图片</p>
+                        </li>
+                    </ul>
+                    <ul class="row cl ml-15 text-c" style="width: 210px;">
+                        <div class="btn-group row text-c">
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe6df;</i>编辑</span>
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe60b;</i>删除</span>
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe6ab;</i>移动</span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="f-l mt-20 ml-20 ">
+                    <img src="./imge/1.jpg" alt="..." class="al-imge">
+                    <ul class="row cl mt-5 ml-5" style="width: 200px;">
+                        <li class="f-l">
+                            <input class="" type="checkbox" value="">
+                        </li>
+                        <li class="f-l">
+                            <p class="text-overflow" style="width: 185px">&nbsp&nbsp图片</p>
+                        </li>
+                    </ul>
+                    <ul class="row cl ml-15 text-c" style="width: 210px;">
+                        <div class="btn-group row text-c">
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe6df;</i>编辑</span>
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe60b;</i>删除</span>
+                            <span class="btn  radius" style="width: 33.33%"><i class="Hui-iconfont">&#xe6ab;</i>移动</span>
+                        </div>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="row cl text-c mt-20">
+                这里是分页呀
+            </div>
+        </div>
+    </div>
+
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="lib/layer/2.1/extend/layer.ext.js"></script>
+<script type="text/javascript" src="lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.admin.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/webuploader/0.1.5/webuploader.min.js"></script>
+<!--<script type="text/javascript" src="lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="lib/ueditor/1.4.3/ueditor.all.min.js"> </script> -->
+<!--<script type="text/javascript" src="lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>-->
+<script type="text/javascript">
+   $(function(){
+      /* 上传图片*/
+       $('.upImge').click(function(){
+           alert(11122);
+       });
+       $('.createFolder').click(function(){
+
+           createFolder();
+       });
+   });
+   /* 创建文件夹*/
+    function createFolder(){
+        layer.prompt({
+            title: '输入文件夹名，并确认',
+            formType: 0 //prompt风格，支持0-2
+        },function(name){
+            alert(name);
+        });
+    }
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
