@@ -8,19 +8,19 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <LINK rel="Bookmark" href="/Albumsys/Public/admin//favicon.ico">
-    <LINK rel="Shortcut Icon" href="/Albumsys/Public/admin//favicon.ico"/>
+    <LINK rel="Bookmark" href="/Album/Public/admin//favicon.ico">
+    <LINK rel="Shortcut Icon" href="/Album/Public/admin//favicon.ico"/>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://lib.h-ui.net/html5.js"></script>
     <script type="text/javascript" src="http://lib.h-ui.net/respond.min.js"></script>
     <script type="text/javascript" src="http://lib.h-ui.net/PIE_IE678.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/static/h-ui/css/H-ui.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/static/h-ui/css/H-ui.admin.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/lib/icheck/icheck.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/static/h-ui/skin/default/skin.css" id="skin"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/static/h-ui/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/static/h-ui/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/lib/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/static/h-ui/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/static/h-ui/css/style.css"/>
     <!--[if IE 6]>
     <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
     <script>DD_belatedPNG.fix('*');</script>
@@ -85,13 +85,13 @@
 </article>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/Albumsys/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/lib/layer/2.1/extend/layer.ext.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/admin/static/h-ui/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/lib/layer/2.1/extend/layer.ext.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Album/Public/admin/static/h-ui/js/H-ui.admin.js"></script>
 <!--/_footer /作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->

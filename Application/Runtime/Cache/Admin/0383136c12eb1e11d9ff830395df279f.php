@@ -8,21 +8,21 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <LINK rel="Bookmark" href="/Albumsys/Public/Admin/favicon.ico">
-    <LINK rel="Shortcut Icon" href="/Albumsys/Public/Admin/favicon.ico"/>
+    <LINK rel="Bookmark" href="/Album/Public/Admin/favicon.ico">
+    <LINK rel="Shortcut Icon" href="/Album/Public/Admin/favicon.ico"/>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/Albumsys/Public/Adminlib/html5.js"></script>
-    <script type="text/javascript" src="/Albumsys/Public/Adminlib/respond.min.js"></script>
-    <script type="text/javascript" src="/Albumsys/Public/Adminlib/PIE_IE678.js"></script>
+    <script type="text/javascript" src="/Album/Public/Adminlib/html5.js"></script>
+    <script type="text/javascript" src="/Album/Public/Adminlib/respond.min.js"></script>
+    <script type="text/javascript" src="/Album/Public/Adminlib/PIE_IE678.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/static/h-ui/css/H-ui.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/static/h-ui/css/H-ui.admin.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/lib/icheck/icheck.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/static/h-ui/skin/default/skin.css" id="skin"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/static/h-ui/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/Admin/icheck/icheck.css"/>
-    <link rel="stylesheet" type="text/css" href="/Albumsys/Public/admin/lib/webuploader/0.1.5/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/static/h-ui/css/H-ui.admin.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/lib/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/static/h-ui/skin/default/skin.css" id="skin"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/static/h-ui/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/Admin/icheck/icheck.css"/>
+    <link rel="stylesheet" type="text/css" href="/Album/Public/admin/lib/webuploader/0.1.5/webuploader.css" />
     <!--[if IE 6]>
     <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js"></script>
     <script>DD_belatedPNG.fix('*');</script>
@@ -113,14 +113,14 @@
                 <?php if(is_array($albumData["sone"])): $i = 0; $__LIST__ = $albumData["sone"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div id="album-no-<?php echo ($data["id"]); ?>" class="f-l mt-20 ml-20 <?php if(($data['leaf'] == 0)): ?>album<?php endif; ?>" >
 
                         <?php if(($data['leaf'] == 0)): ?><a href="<?php echo U('Line/album?id='.$data['id']);?>">
-                                <img src="/Albumsys/Public/Admin/imge/6.png"  alt="<?php echo ($data["title"]); ?>" class="al-imge">
+                                <img src="/Album/Public/Admin/imge/6.png"  alt="<?php echo ($data["title"]); ?>" class="al-imge">
                             </a>
                             <?php else: ?>
-                            <img  src="/Albumsys/<?php echo ($data["address"]); ?>" alt="<?php echo ($data["title"]); ?>" class="al-imge"><?php endif; ?>
+                            <img  src="/Album/<?php echo ($data["address"]); ?>" alt="<?php echo ($data["title"]); ?>" class="al-imge"><?php endif; ?>
 
                         <ul class="row cl mt-5 ml-5 al-msg" >
                             <?php if(($data['leaf'] == 1)): ?><li class="f-l">
-                                    <input type="checkbox"  class="picture-id" pname="<?php echo ($data["title"]); ?>"  pictureAdd="/Albumsys/<?php echo ($data["address"]); ?>" value="<?php echo ($data["id"]); ?>">
+                                    <input type="checkbox"  class="picture-id" pname="<?php echo ($data["title"]); ?>"  pictureAdd="/Album/<?php echo ($data["address"]); ?>" value="<?php echo ($data["id"]); ?>">
                                 </li><?php endif; ?>
                             <li class="f-l">
                                 <p class="text-overflow al-name" >&nbsp&nbsp<?php echo ($data["title"]); ?></p>
@@ -137,23 +137,23 @@
 </article>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/layer/2.1/extend/layer.ext.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/static/h-ui/js/H-ui.admin.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/layer/2.1/extend/layer.ext.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.min.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/static/h-ui/js/H-ui.admin.js"></script>
 <!--/_footer /作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script>
-<!--<script type="text/javascript" src="/Albumsys/Public/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
-<script type="text/javascript" src="/Albumsys/Public/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> -->
-<!--<script type="text/javascript" src="/Albumsys/Public/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>-->
+<script type="text/javascript" src="/Album/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<!--<script type="text/javascript" src="/Album/Public/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="/Album/Public/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> -->
+<!--<script type="text/javascript" src="/Album/Public/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>-->
 <script type="text/javascript">
    $('#checkbox-all').on('click',function(){
       // alert($('#checkbox-all').prop("checked"));
