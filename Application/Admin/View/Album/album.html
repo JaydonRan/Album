@@ -92,9 +92,9 @@
             <div class="row cl">
                 <div class="formControls col-xs-12 col-sm-12">
                     <nav class="Hui-breadcrumb">
-                        <a class="maincolor" href="<{:U('Line/album')}>">根节点</a>
+                        <a class="maincolor" href="<{:U('Album/album')}>">根节点</a>
                         <volist name="tree" id="treeData">
-                            <a href="<{:U('Line/album')}>?id=<{$treeData.id}>">
+                            <a href="<{:U('Album/album')}>?id=<{$treeData.id}>">
                                 <span class="c-666">&gt;</span><{$treeData.title}>
                             </a>
                         </volist>
@@ -116,7 +116,7 @@
                     <div id="album-no-<{$data.id}>" class="f-l mt-20 ml-20 <if condition="($data['leaf'] eq 0)">album</if>" >
 
                         <if condition="($data['leaf'] eq 0)">
-                            <a href="<{:U('Line/album?id='.$data['id'])}>">
+                            <a href="<{:U('Album/album?id='.$data['id'])}>">
                                 <img src="__PUBLIC__/Admin/imge/6.png"  alt="<{$data.title}>" class="al-imge">
                             </a>
                             <else />
